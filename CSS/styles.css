@@ -1,14 +1,13 @@
 .background {
   text-align:center;
-  margin: auto;
-  /* border-bottom:solid 1px #3b3b38; */
+  margin:auto;
   background-image:url("../JPEG/Giewont.jpg");
   background-repeat:no-repeat;
-  background-size:cover;
-  background-position:bottom;
+  background-position:top;
   background-attachment:fixed;
-  }
+  background-size: cover;
 
+  }
   .avatar{
   max-width: 12em;
   border-radius: 75%;
@@ -39,10 +38,10 @@
 /*
 *******Media Querries********
 */
-@media screen and (min-width:480px){
+/* @media screen and (min-width:480px){ */
   .content{
   background-color: #f7f3e9;
-  width:75%;
+  width:35%;
   margin: auto;
   padding-bottom:0.25em;
   border-radius: 10px;
