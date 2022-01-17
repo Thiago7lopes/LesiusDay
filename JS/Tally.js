@@ -1,6 +1,5 @@
  /* This is a web app to dedicated to my father-in-law;
 It`s basically a tally counter but the most important is what you`re counting =) */
-
 // Constants below:
 let count = document.querySelector('.count')
 const buttonClickAdd = document.querySelector('.add')
@@ -12,15 +11,12 @@ buttonClickAdd.addEventListener('click', () => {
   let counter = count.innerHTML
   count.innerHTML = parseInt(counter) + 1;})
 
-// buttonClickRem.addEventListener ('click',() => {
-//   let counter= count.innerHTML
-//   count.innerHTML = parseInt(counter) - 1;})
-
 buttonClickSub.addEventListener ('click',sub)
 
 buttonClickRes.addEventListener('click', () => {
   let counter= count.innerHTML;
   count.innerHTML = parseInt(counter) * 0;})
+
 
   // No negative numbers
   function sub() {

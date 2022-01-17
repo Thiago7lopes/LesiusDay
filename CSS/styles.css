@@ -1,40 +1,43 @@
 body {
 text-align:center;
 margin: auto;
-/* background-color: #f7f3e9; */
 border-bottom:solid 1px #3b3b38;
 background-image:url("../JPEG/Giewont.jpg");
 background-repeat:no-repeat;
 background-size:cover;
 background-position:bottom;
 background-attachment:fixed;
-/* padding: 16px;
-max-width: 600px */
-
+/* max-width: 600px  */
 }
-
-
+#background{
+background-color: #f7f3e9;
+max-width: 650px;
+margin: auto;
+margin-top: 1em;
+border: solid white 1px;
+border-radius: 10px;
+}
 
 .instructions{
 /* color: #3b3b38; */
-color: white;
+color: black;
 max-width: 600px;
 margin: auto;
 text-align: center;
 border:dotted white 10px;
+margin-bottom: 0.5em;
 }
 .headline {
 /* color: #3b3b38; */
-color: white;
+color: black;
 text-align: center;
 margin-bottom: -1.5em;;
 }
 
 .count {
-color:white;
+color:black;
 font-size: 75px;
 }
-
 
 .avatar{
 max-width: 250px;
@@ -73,10 +76,9 @@ background-color: #97bf97;
 
 .reset{
 background-color: tomato;
-margin-bottom: 4em;
+margin-bottom: 1.75em;
 }
 
 .btn-container{
 margin-top: -2em;
-
   }
