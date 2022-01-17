@@ -33,15 +33,16 @@
   font-size: 1em;
   margin-top: 2em;
   color: white;
+   min-height: calc(100vh - 89px)
 
   }
 /*
 *******Media Querries********
 */
-@media screen and (min-width:800px){
+@media screen and (min-width:480px){
   .content{
   background-color: #f7f3e9;
-  width:35%;
+  width:75%;
   margin: auto;
   padding-bottom:0.25em;
   border-radius: 10px;
