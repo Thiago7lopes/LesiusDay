@@ -1,3 +1,6 @@
+/********************
+Mountain background
+ *******************/
 .background {
 text-align:center;
 margin: auto;
@@ -34,6 +37,9 @@ max-width:100%;
   font-size: 5em;
   }
 
+  .instructions {
+  border:dotted white 10px;
+  }
   .footer {
   font-size: 1em;
   color: white;
@@ -70,3 +76,13 @@ max-width:100%;
  .btn-container{
  margin-top: -4em;
    }
+/***********
+    Nav
+********** */
+
+nav {
+display: flex;
+justify-content: flex-end;
+margin-right: 0.5em;
+
+}
