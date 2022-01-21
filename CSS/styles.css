@@ -15,8 +15,9 @@ background-size:cover;
   background-color: #f7f3e9;
   max-width:75%;
   margin: auto;
-  padding:1em;
+  padding:1em 1em 10em 1em;
   border-radius: 10px;
+  height: 100vh;
   }
   .avatar{
   max-width: 12em;
@@ -79,7 +80,7 @@ background-size:cover;
 nav {
 display: flex;
 justify-content: flex-end;
-margin-right: 0.5em;
+margin:0.5em;
 
 }
 /*******************
@@ -88,5 +89,6 @@ margin-right: 0.5em;
 @media only screen and (min-width: 600px){
   .content{
     max-width: 40%;
+    padding:1em 1em 4em 1em;
   }
 }
