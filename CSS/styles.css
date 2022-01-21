@@ -4,12 +4,8 @@ Mountain background
 .background {
 text-align:center;
 margin: auto;
-background-image:url("../JPEG/Giewont.jpg");
-background-repeat:no-repeat;
+background:url("../JPEG/Giewont.jpg") fixed no-repeat center ;
 background-size:cover;
-background-position:bottom;
-background-attachment:fixed;
-max-width:100%;
 }
 
 /*******************
@@ -19,7 +15,7 @@ max-width:100%;
   background-color: #f7f3e9;
   max-width:75%;
   margin: auto;
-  padding-bottom:0.25em;
+  padding:1em;
   border-radius: 10px;
   }
   .avatar{
@@ -85,4 +81,12 @@ display: flex;
 justify-content: flex-end;
 margin-right: 0.5em;
 
+}
+/*******************
+    Media Queries
+********************/
+@media only screen and (min-width: 600px){
+  .content{
+    max-width: 40%;
+  }
 }
