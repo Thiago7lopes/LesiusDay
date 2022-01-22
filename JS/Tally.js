@@ -33,11 +33,19 @@ buttonClickRes.addEventListener('click', reset)
 
   // Experiments:
 
-// const GetValue = ()=> {
-//   document.querySelector('input').value;
-// }
-//
-//   function set (){
-//     const counter = count.innerHTML
-//     count.innerHTML =
-//   }
+const set= document.querySelector('.set-btn');
+const input = document.querySelector('.input')
+
+set.addEventListener('clicks', getValue());
+
+function getValue() {
+  let value = input.innerHTML;
+  return input; 
+}
+
+console.log(getValue());
+
+  // function set (){
+  //   const counter = count.innerHTML
+  //   count.innerHTML =
+  // }
