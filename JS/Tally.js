@@ -31,21 +31,24 @@ buttonClickRes.addEventListener('click', reset)
     count.innerHTML = parseInt(counter) * 0;
   }
 
+// const value = prompt("Type it here");
+// console.log(value);
+
+const input= document.querySelector('.input')
+console.log(input);
+
+
+
   // Experiments:
 
-const set= document.querySelector('.set-btn');
-const input = document.querySelector('.input')
+// const set= document.querySelector('.set-btn');
+// const input = document.querySelector('.input')
+//
+// work.addEventListener('clicks', getValue());
 
-set.addEventListener('clicks', getValue());
+// function getValue() {
+// const value = prompt("Type here");
+// console.log(value);
+// }
 
-function getValue() {
-  let value = input.innerHTML;
-  return input; 
-}
-
-console.log(getValue());
-
-  // function set (){
-  //   const counter = count.innerHTML
-  //   count.innerHTML =
-  // }
+// document.querySelector('.work').addEventListener('clicks', ()=> {console.log(this.value)});
