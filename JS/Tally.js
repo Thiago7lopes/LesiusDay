@@ -5,6 +5,8 @@ let count = document.querySelector('.count')
 const buttonClickAdd = document.querySelector('.add')
 const buttonClickSub = document.querySelector('.sub')
 const buttonClickRes = document.querySelector('.reset')
+const set= document.querySelector('.set-btn');
+const input = document.querySelector('.input')
 
 // Listerners below:
 buttonClickAdd.addEventListener('click', add)
@@ -13,7 +15,12 @@ buttonClickSub.addEventListener ('click',sub)
 
 buttonClickRes.addEventListener('click', reset)
 
-// functions
+set.addEventListener('click', setValue)
+
+input.addEventListener('keydown', setField)
+
+
+// functions Below:
 
   function add (){
     const counter = count.innerHTML
@@ -31,24 +38,39 @@ buttonClickRes.addEventListener('click', reset)
     count.innerHTML = parseInt(counter) * 0;
   }
 
-// const value = prompt("Type it here");
-// console.log(value);
+    function setValue(){
+      if(input.value !=""){
+      const counter = input.value
+      count.innerHTML = parseInt(counter)
+      input.value = ""
+    }
+}
 
-const input= document.querySelector('.input')
-console.log(input);
+    function setField(event) {
+      if (event.keyCode === 13) {
+        console.log(input.value);
+      }
+
+
+    }
 
 
 
-  // Experiments:
 
-// const set= document.querySelector('.set-btn');
-// const input = document.querySelector('.input')
+
+  // // function entervalue(e){
+  // //   if(e.key === "enter"){
+  // //     console.log(input.value);
+  //   }
+
+
+// Sound Player
+
+// const sound = new Audio();
+// sound.src = "Media/kurwa.mp3"
 //
-// work.addEventListener('clicks', getValue());
-
-// function getValue() {
-// const value = prompt("Type here");
-// console.log(value);
+// sound.addEventListener('click', playSound)
+//
+// function playSound() {
+//
 // }
-
-// document.querySelector('.work').addEventListener('clicks', ()=> {console.log(this.value)});
