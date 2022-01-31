@@ -164,6 +164,7 @@ border-radius:12px;
 /* padding: 0.4em 0em; I want to use the bullet buttom. Text not centralized. */
 background-color: #bf0808;
 color:white;
+font-weight: bold;
 cursor: pointer;
 }
 
