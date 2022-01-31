@@ -1,6 +1,6 @@
 *{
 box-sizing: border-box;
-
+font-family: Roboto;
 }
 
 /********************
@@ -20,8 +20,21 @@ nav {
 display: flex;
 justify-content: flex-end;
 margin:0.5em;
-
 }
+
+.links{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ADD8E6;
+  transform: scale(1.1);
+}
+a:visited {
+  color: # tomato;
+}
+
 /*******************
     Content Area
 ********************/
@@ -61,14 +74,14 @@ margin:0.5em;
   border: black 1px solid;
   border-radius: 10px;
   text-decoration: none;
-  width: 4em;
+  width: 8em;
   }
 
   .instructions {
   text-align: center;
   border:dotted white 10px;
   padding:0.75em;
-
+  font-weight: bold;
 
   }
   .footer {
@@ -123,8 +136,17 @@ margin:0.5em;
  padding: 0.75em 0em;
  }
 
+.btn:active{
+  transform: scale(0.9);
+}
 
+.reset:active{
+  transform: scale(0.9);
+}
 
+.set-btn:active {
+transform: scale(0.9);
+}
 /***********
   Form
 ********** */
