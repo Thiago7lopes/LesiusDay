@@ -11,19 +11,19 @@
     <header>
       <nav>
         <a href="#">English - </a>
-        <a href="polish.html" onmousedown="sound.play()"> Polski</a>
+        <a href="polish.html"> Polski</a>
       </nav>
     </header>
     <main class="content">
       <!-- <img class="avatar" src="JPEG/Lesiu.jpg" alt="Lesiu's face"> -->
       <!-- <img src="Media/lesiu.gif" alt="Lesiu's face" height="175px" width="175px" class="gif"> -->
-        <div>
+        <div class= "video">
             <video src="Media/Lesiu.mp4"hight="175px" width="175px" autoplay muted loop type="video/mp4" class="mp4"/>
-        </div>
+        </div class= "">
           <h1 class="headline">How many times Lesiu said "k****" today?</h1>
           <h2 class="count"> 0 </h2>
           <div class="btn-container">
-              <button  class="add btn" type="button" name="button">Lesiu screams</button>
+              <button  class="add btn" type="button" name="button" onmousedown="sound.play()">Lesiu screams</button>
               <button  class="sub btn" type="button" name="button">Lesiu apologizes</button> <br>
               <button  class="reset btn" type="button" name="button">Reset</button>
         </div>
@@ -49,10 +49,6 @@
 <script>
 const sound = new Audio();
 sound.src = "Media/kurwa.mp3"
-
-sound.addEventListener('click', playSound)
-
-function playSound() {
 }
 </script>
 </html>

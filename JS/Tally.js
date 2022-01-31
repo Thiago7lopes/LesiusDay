@@ -1,5 +1,6 @@
  /* This app is  dedicated to my father-in-law;
 It`s basically a tally counter but the most important is what you`re counting =) */
+
 // Constants below:
 let count = document.querySelector('.count')
 const buttonClickAdd = document.querySelector('.add')
@@ -48,29 +49,15 @@ input.addEventListener('keydown', setField)
 
     function setField(event) {
       if (event.keyCode === 13) {
-        console.log(input.value);
+        event.preventDefault(); // This line removes the implicit submision from the form while pressing enter;
+        const counter = input.value
+        count.innerHTML = parseInt(counter)
+        input.value = ""
       }
-
-
     }
-
-
-
-
-
-  // // function entervalue(e){
-  // //   if(e.key === "enter"){
-  // //     console.log(input.value);
-  //   }
 
 
 // Sound Player
 
 // const sound = new Audio();
-// sound.src = "Media/kurwa.mp3"
-//
-// sound.addEventListener('click', playSound)
-//
-// function playSound() {
-//
-// }
+// sound.src = "../Media/kurwa.mp3"
