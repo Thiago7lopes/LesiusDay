@@ -19,7 +19,10 @@ background-size:cover;
 nav {
 display: flex;
 justify-content: flex-end;
-margin:0.5em;
+margin: 1em;
+/* position: fixed;
+width: 100%; /* Full width */
+
 }
 
 .links{
@@ -30,9 +33,6 @@ margin:0.5em;
 a:hover {
   color: #ADD8E6;
   transform: scale(1.1);
-}
-a:visited {
-  color: # tomato;
 }
 
 /*******************
@@ -176,7 +176,6 @@ cursor: pointer;
   .content{
     margin: auto;
     max-width:40%;
-    min-width:40%;
     padding:1em;
 }
 /* Buttons */

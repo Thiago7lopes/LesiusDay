@@ -40,7 +40,7 @@ input.addEventListener('keydown', setField)
   }
 
     function setValue(){
-      if(input.value !=""){
+      if(input.value !="" &&"+" && "-" ){
       const counter = input.value
       count.innerHTML = parseInt(counter)
       input.value = ""
@@ -48,7 +48,7 @@ input.addEventListener('keydown', setField)
 }
 
     function setField(event) {
-      if (event.keyCode === 13) {
+      if (event.keyCode === 13 && input.value !="" &&"+" && "-" ()) {
         event.preventDefault(); // This line removes the implicit submision from the form while pressing enter;
         const counter = input.value
         count.innerHTML = parseInt(counter)
