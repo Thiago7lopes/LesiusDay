@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesiu`s Day!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-  </head>
-  <body class ="background">
-    <header>
-      <nav>
-        <a href="#" class="links">English-</a>
-        <a href="polish.html" class="links" > Polski</a>
-      </nav>
-    </header>
-    <main class="content">
-      <!-- <img class="avatar" src="JPEG/Lesiu.jpg" alt="Lesiu's face"> -->
-      <!-- <img src="Media/lesiu.gif" alt="Lesiu's face" height="175px" width="175px" class="gif"> -->
-        <div class= "video">
-            <video src="Media/Lesiu.mp4"hight="175px" width="175px" autoplay muted loop type="video/mp4" />
-        </div class=>
-
-          <h1 class="headline">How many times Lesiu said "k****" today?</h1>
-          <h2 class="count"> 0 </h2>
-
-
-        <div class="btn-container">
-            <button  class="add btn" type="button" name="button" onmousedown="sound.play()">Lesiu screams</button>
-            <button  class="sub btn" type="button" name="button">Lesiu apologizes</button> <br>
-            <button  class="reset" type="button" name="button">Reset</button>
-        </div>
-        <form class="form" autocomplete="off">
-              <button class="set-btn" type="button" name="set-btn">Set</button>
-              <input class="input" type="number" size ="5" name="set" value="" min="0" >
-        </form>
-        <div class="instructions">
-          <h2 id="instruction-title" >Instructions</h2>
-            <p> When Lesiu screams: "K****", click on "Lesiu screams" to increase the counter;</p>
-            <p> When Lesiu moans: "Przepraszam" ( I know, almost never ), click on "Lesiu appologizes" to decrease the counter;</p>
-            <p> It`s a new day!!! Time to click on reset</p>
-            <p> Late for the count here? No worries, input the number and click on "set" to catch up with him!</p>
-        </div>
-    </main>
-
-    <footer class = "footer">
-      &copy 2022, The best son-in-law in the world!
-    </footer>
-  </body>
-<script src= JS/Tally.js Apptype="text/javascript">
-</script>
-<script>
-const sound = new Audio();
-sound.src = "Media/kurwa.mp3"
-</script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lesiu`s Day!</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <link rel="stylesheet" href="CSS/styles.css">
+      </head>
+    <body class ="background">
+        <header>
+            <nav>
+              <a href="#" class="links">English-</a>
+              <a href="polish.html" class="links" > Polski</a>
+            </nav>
+          </header>
+        <main class="content">
+            <!-- <img class="avatar" src="JPEG/Lesiu.jpg" alt="Lesiu's face"> -->
+            <!-- <img src="Media/lesiu.gif" alt="Lesiu's face" height="175px" width="175px" class="gif"> -->
+            <div class= "video">
+                <video src="Media/Lesiu.mp4"hight="175px" width="175px" autoplay muted loop type="video/mp4" />
+            </div>
+            <h1 class="headline">How many times Lesiu said "k****" today?</h1>
+            <h2 class="count"> 0 </h2>
+            <div class="btn-container">
+                <button  class="add btn" type="button" name="button">Lesiu screams</button>
+                <button  class="sub btn" type="button" name="button">Lesiu apologizes</button> <br>
+                <button  class="reset" type="button" name="button">Reset</button>
+            </div>
+            <form class="form" autocomplete="off">
+                  <button class="set-btn" type="button" name="set-btn">Set</button>
+                  <input class="input" type="number" size ="5" name="set" value="" min="0" >
+            </form>
+            <div class="instructions">
+              <h2 id="instruction-title" >Instructions</h2>
+                <p> When Lesiu screams: "K****", click on "Lesiu screams" to increase the counter;</p>
+                <p> When Lesiu moans: "Przepraszam" ( I know, almost never ), click on "Lesiu appologizes" to decrease the counter;</p>
+                <p> It`s a new day!!! Time to click on reset</p>
+                <p> Late for the count here? No worries, input the number and click on "set" to catch up with him!</p>
+            </div>
+        </main>
+      <footer class = "footer">
+        &copy 2022, The best son-in-law in the world!
+      </footer>
+    </body>
+    <script src= JS/Tally.js Apptype="text/javascript">
+    </script>
 </html>

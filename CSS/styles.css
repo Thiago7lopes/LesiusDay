@@ -44,6 +44,7 @@ a:hover {
   }
 
   .content{
+  overflow: hidden;
   background-color: #f7f3e9;
   max-width:75%;
   margin: auto;
@@ -161,7 +162,6 @@ margin: 1em 0 1em 1em;
 width:48px;
 border: none;
 border-radius:12px;
-/* padding: 0.4em 0em; I want to use the bullet buttom. Text not centralized. */
 background-color: #bf0808;
 color:white;
 font-weight: bold;
