@@ -44,7 +44,7 @@ a:hover {
   }
 
   .content{
-  overflow: hidden;
+  overflow-wrap: break-word; 
   background-color: #f7f3e9;
   max-width:75%;
   margin: auto;
