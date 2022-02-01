@@ -2,7 +2,7 @@
 It`s basically a tally counter but the most important is what you`re counting =) */
 
 // Constants below:
-let count = document.querySelector('.count')
+const count = document.querySelector('.count')
 const buttonClickAdd = document.querySelector('.add')
 const buttonClickSub = document.querySelector('.sub')
 const buttonClickRes = document.querySelector('.reset')
@@ -36,30 +36,34 @@ input.addEventListener('keydown', setField)
 
   function reset(){
     const counter = count.innerHTML
-    count.innerHTML = parseInt(counter) * 0;
+    count.innerHTML = 0;
   }
 
     function setBtn(){
       const positiveNum = input.value
-        if(input.value !="" &&"+" && "-" && parseInt(positiveNum) >= 0){
+        if(parseInt(positiveNum) >= 0){
           const counter = input.value
           count.innerHTML = parseInt(counter)
           input.value = ""
       }
 }
 
-    function setField(event) {
-      const positiveNum = input.value
-        if (event.keyCode === 13 && input.value !="" &&"+" && "-" && parseInt(positiveNum) >= 0) {
-          event.preventDefault(); // This line removes the implicit submision from the form while pressing enter;
-          const counter = input.value
-          count.innerHTML = parseInt(counter)
-          input.value = ""
-      }
+function setField(event) {
+    const positiveNum = input.value
+    if (event.keyCode === 13 && parseInt(positiveNum) >= 0) {
+      event.preventDefault(); // This line removes the implicit submision from the form while pressing enter;
+      const counter = input.value
+      count.innerHTML = parseInt(counter)
+      input.value = ""
     }
-
+  }
 
 // Sound Player
+buttonClickAdd.addEventListener('click', playsound)
 
-// const sound = new Audio();
-// sound.src = "../Media/kurwa.mp3"
+const sound = new Audio();
+sound.src = "Media/kurwa.mp3"
+
+function playsound() {
+  sound.play();
+}
